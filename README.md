@@ -1,18 +1,18 @@
 # Simple Linked Variations for WooCommerce
 
-** Contributors **: dingo_bastard
+**Contributors**: dingo_bastard
 
-** Tags **: shop, attributes, variations, variable product, woocommerce
+**Tags**: shop, attributes, variations, variable product, woocommerce
 
-** Requires at least **: 4.1
+**Requires at least**: 4.1
 
-** Tested up to **: 4.7.2
+**Tested up to**: 4.7.2
 
-** Stable tag **: 1.0.0
+**Stable tag**: 1.0.0
 
-** License **: GPLv2 or later
+**License**: GPLv2 or later
 
-** License URI **: http://www.gnu.org/licenses/gpl-2.0.html
+**License URI**: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 An add-on plugin for WooCommerce which allows variations to be linked together, and will then toggle drop downs on the front end based on the links made
