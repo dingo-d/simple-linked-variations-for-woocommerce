@@ -29,7 +29,7 @@ Create a variable product, set your variations and link them logically and see h
 This plugin works with WooCommerce, so be sure to have WooCoommerce installed before you install this plugin.
 After that create variable product with variations, save it and then set your links in the 'Linked attributes' tab in the 'Product Data' meta box.
 
-** Created using the best coding practices and latest standards **
+**Created using the best coding practices and latest standards**
 
 ## Installation ##
 
@@ -37,7 +37,7 @@ After that create variable product with variations, save it and then set your li
 
 Installing the plugin is easy. Just follow these steps:
 
-** Installing from WordPress repository: **
+**Installing from WordPress repository:**
 
 Be sure you have WooCommerce plugin installed first, otherwise you'll get an error on the plugin activation.
 
@@ -46,7 +46,7 @@ Be sure you have WooCommerce plugin installed first, otherwise you'll get an err
 3. Click Install Now
 4. When it's finished, activate the plugin via the prompt. A message will show confirming activation was successful.
 
-** Uploading the .zip file: **
+**Uploading the .zip file:**
 
 1. From the dashboard of your site, navigate to Plugins --> Add New.
 2. Select the Upload option and hit "Choose File."
