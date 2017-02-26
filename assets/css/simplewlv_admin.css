@@ -1,0 +1,24 @@
+.linked_attributes_wrapper{
+	display: block;
+	padding: 12px;
+}
+
+.attributes.left,
+.attributes.right{
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.attributes.left{
+	margin-right: 20px;
+}
+
+.no_variations_notice{
+	padding: 12px;
+	font-weight: 700;
+}
+
+.woocommerce_options_panel label[for*="linked_attribute_value"]{
+	width: 100%;
+}
