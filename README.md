@@ -19,7 +19,7 @@ An add-on plugin for WooCommerce which allows variations to be linked together, 
 
 ## Download link: ##
 
-
+https://wordpress.org/plugins/simple-linked-variations-for-woocommerce/
 
 ## Description ##
 
