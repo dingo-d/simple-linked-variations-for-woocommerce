@@ -2,13 +2,15 @@
 
 **Contributors**: dingo_bastard
 
-**Tags**: shop, attributes, variations, variable product, woocommerce
+**Tags**: shop, attributes, variations, variable product, woocommerce, simple, linked
 
-**Requires at least**: 4.1
+**Requires at least**: 4.4
 
-**Tested up to**: 4.7.2
+**Requires PHP**: 5.6
 
-**Stable tag**: 1.0.0
+**Tested up to**: 4.8.3
+
+**Stable tag**: 1.0.2
 
 **License**: GPLv2 or later
 
@@ -58,11 +60,19 @@ That's it!
 
 ###### Requirements ######
 
-* PHP 5.4 or greater (recommended: PHP 7 or greater)
-* WordPress 4.1 or above
+* PHP 5.6 or greater (recommended: PHP 7 or greater)
+* WordPress 4.4 or above
 * jQuery 1.11.x
 
 ## Changelog ##
 
-###### 1.0.0 ######
+= 1.0.0 =
 * Initial Release
+
+= 1.0.1 =
+* Tested with WordPress 4.8 and WooCommerce 3.0.8 to ensure stability
+* Fixed changed attributes select so that they work with the newest WooCommerce
+
+= 1.0.2 =
+* Fixed the issue with calling the product ID directly
+* Minor CSS fixes
