@@ -1,9 +1,12 @@
 === Simple Linked Variations for WooCommerce ===
 Contributors: dingo_bastard
-Tags: shop, attributes, variations, variable product, woocommerce
-Requires at least: 4.1
-Tested up to: 4.7.2
-Stable tag: 1.0.0
+Tags: shop, shop, attributes, variations, variable product, woocommerce, simple, linked
+Requires at least: 4.4
+Requires PHP: 5.6
+Tested up to: 4.9.6
+Stable tag: 1.1.0
+WC requires at least: 3.0.0
+WC tested up to: 3.4.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,8 +49,8 @@ That's it!
 
 = Requirements =
 
-* PHP 5.4 or greater (recommended: PHP 7 or greater)
-* WordPress 4.1 or above
+* PHP 5.6 or greater (recommended: PHP 7 or greater)
+* WordPress 4.4 or above
 * jQuery 1.11.x
 
 == Screenshots ==
@@ -64,3 +67,15 @@ That's it!
 
 = 1.0.0 =
 * Initial Release
+
+= 1.0.1 =
+* Tested with WordPress 4.8 and WooCommerce 3.0.8 to ensure stability
+* Fixed changed attributes select so that they work with the newest WooCommerce
+
+= 1.0.2 =
+* Fixed the issue with calling the product ID directly
+* Minor CSS fixes
+
+= 1.1.0 =
+* Added multilinking ability
+* Minor fixes

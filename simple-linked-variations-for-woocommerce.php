@@ -9,7 +9,7 @@
  * Plugin Name:       Simple Linked Variations for WooCommerce
  * Plugin URI:        http://madebydenis.com/simple-linked-variations-for-woocommerce/
  * Description:       An add-on plugin for WooCommerce which allows variations to be linked together, and will then toggle dropdowns on the front end based on the links made
- * Version:           1.0.2
+ * Version:           1.1.0
  * Author:            Denis Zoljom
  * Author URI:        https://madebydenis.com/
  * License:           GPL-2.0+
@@ -74,7 +74,7 @@ class Simple_Linked_Variations_For_WooCommerce {
    */
   public function __construct() {
     $this->simplewlv = 'simplewlv';
-    $this->version   = '1.0.1';
+    $this->version   = '1.1.0';
 
     $this->set_locale();
     $this->define_admin_hooks();
@@ -176,9 +176,11 @@ class Simple_Linked_Variations_For_WooCommerce {
       $product = wc_get_product();
       if ( $product->has_child() ) :
         $available_variations = $product->get_available_variations();
-        $all_attributes = $product->get_variation_attributes();
-        $attributes = array( '-' => '-' );
-        $attribute_values = array();
+        $all_attributes       = $product->get_variation_attributes();
+        $attributes           = array(
+          '-' => '-'
+        );
+        $attribute_values     = array();
 
         foreach ( $all_attributes as $attribute_key => $attribute_value ) {
           $attribute_name = ucfirst( trim( str_replace( 'pa_', '', $attribute_key ) ) );
@@ -263,7 +265,7 @@ class Simple_Linked_Variations_For_WooCommerce {
       'selected_attribute' => $linked_attribute,
     );
     ?>
-    <input type="hidden" class="simplewlv_hidden" value="<?php echo htmlentities( wp_json_encode( $json_output ) ); ?>"/>
+    <input type="hidden" class="simplewlv_hidden" value="<?php echo htmlspecialchars( wp_json_encode( $json_output ), ENT_QUOTES, 'UTF-8' ); ?>"/>
     <?php
   }
 
@@ -299,8 +301,6 @@ class Simple_Linked_Variations_For_WooCommerce {
   public function simplewlv_enqueue_backend_scripts() {
     wp_enqueue_style( $this->simplewlv, plugin_dir_url( __FILE__ ) . 'assets/css/simplewlv_admin.css', array(), $this->version, 'all' );
   }
-
-
 }
 
 $init = new Simple_Linked_Variations_For_WooCommerce();
