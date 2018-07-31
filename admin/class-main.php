@@ -33,12 +33,13 @@ class Main {
    * @since 1.0.0
    */
   public function __construct() {
+    $this->woo_functionality = new Woo_Functionality();
+    $this->admin             = new Admin( self::PLUGIN_NAME );
+
     $this->set_locale();
+    $this->set_assets_manifest_data();
     $this->define_admin_hooks();
     $this->define_public_hooks();
-
-    $this->woo_functionality = new Woo_Functionality();
-    $this->admin             = new Admin( self::PLUGIN_NAME, self::PLUGIN_VERSION );
   }
 
   /**
@@ -79,7 +80,6 @@ class Main {
    * @access  private
    */
   private function define_public_hooks() {
-    add_action( 'wp_enqueue_scripts', array( $this->admin, 'enqueue_frontend_styles' ) );
     add_action( 'wp_enqueue_scripts', array( $this->admin, 'enqueue_frontend_scripts' ) );
 
     add_action( 'woocommerce_before_add_to_cart_button', array( $this->woo_functionality, 'frontend_hidden_meta' ) );
@@ -97,5 +97,23 @@ class Main {
       false,
       plugin_dir_path( __DIR__ ) . '/languages/'
     );
+  }
+
+  /**
+   * Define global variable to save memory when parsing manifest on every load.
+   *
+   * @since 1.1.0
+   */
+  public function set_assets_manifest_data() {
+    $response = wp_remote_get( rtrim( plugin_dir_url( __DIR__ ), '/' ) . '/assets/public/manifest.json' );
+    if ( ! is_array( $response ) && is_wp_error( $response ) ) {
+      return;
+    }
+
+    if ( ! isset( $response['body'] ) && $response['body'] === '' ) {
+      return;
+    }
+
+    define( 'SIMPLEWLV_ASSETS_MANIFEST', $response['body'] );
   }
 }

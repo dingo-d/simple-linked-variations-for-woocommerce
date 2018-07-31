@@ -1,0 +1,49 @@
+{
+  "name": "simple-linked-variations-for-woocommerce",
+  "version": "1.1.0",
+  "author": "Denis Žoljom",
+  "scripts": {
+    "start": "NODE_ENV=development webpack --progress --watch --display-error-details --display-reasons --mode development",
+    "build": "NODE_ENV=production webpack -p --progress --mode production"
+  },
+  "devDependencies": {
+    "@infinumjs/eslint-config": "^1.1.0",
+    "@infinumjs/stylelint-config": "^1.0.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.2.0",
+    "eslint-plugin-import": "^2.13.0",
+    "file-loader": "^1.1.11",
+    "imports-loader": "^0.8.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.2",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-loader": "^2.1.6",
+    "precss": "^3.1.2",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "stylelint": "^9.4.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-manifest-plugin": "^2.0.3"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.0.2",
+    "babel-polyfill": "^6.26.0",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.0.5"
+  },
+  "browserslist": [
+    "android >= 4.2",
+    "not ie < 11",
+    "last 2 versions",
+    "Safari >= 8"
+  ]
+}

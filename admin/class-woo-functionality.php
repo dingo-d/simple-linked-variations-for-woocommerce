@@ -29,7 +29,7 @@ class Woo_Functionality {
     );
 
     ?>
-    <input type="hidden" class="simplewlv_hidden" value="<?php echo htmlspecialchars( wp_json_encode( $json_output ), ENT_QUOTES, 'UTF-8' ); ?>"/>
+    <input type="hidden" class="simplewlv_hidden" value="<?php echo wp_kses_post( htmlspecialchars( wp_json_encode( $json_output ), ENT_QUOTES, 'UTF-8' ) ); ?>"/>
     <?php
   }
 
