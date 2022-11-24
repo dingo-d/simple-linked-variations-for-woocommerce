@@ -38,7 +38,7 @@
     "autoprefixer": "^9.0.2",
     "babel-polyfill": "^6.26.0",
     "css-mqpacker": "^7.0.0",
-    "cssnano": "^4.0.5"
+    "cssnano": "^5.1.14"
   },
   "browserslist": [
     "android >= 4.2",
