@@ -4,10 +4,10 @@
 **Tags:** shop, shop, attributes, variations, variable product, woocommerce, simple, linked  
 **Requires at least:** 4.4  
 **Requires PHP:** 5.6  
-**Tested up to:** 4.9.6  
+**Tested up to:** 4.9.7  
 **Stable tag:** 1.1.0  
 **WC requires at least:** 3.0.0  
-**WC tested up to:** 3.4.2  
+**WC tested up to:** 3.4.4  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -72,5 +72,5 @@ That's it!
 * Minor CSS fixes
 
 ### 1.1.0
+* Rewrite of the plugin with classes and autoloader
 * Added multilinking ability
-* Minor fixes

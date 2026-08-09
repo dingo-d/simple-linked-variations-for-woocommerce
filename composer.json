@@ -1,0 +1,43 @@
+{
+  "name": "dingo-d/simple-linked-variations-for-woocommerce",
+  "type": "wordpress-plugin",
+  "description": "An add-on plugin for WooCommerce which allows variations to be linked together, and will then toggle dropdowns on the front end based on the links made.",
+  "keywords": [
+    "plugin",
+    "WordPress",
+    "WooCommerce",
+    "variations",
+    "store",
+    "ecommerce"
+  ],
+  "homepage": "https://github.com/dingo-d/simple-linked-variations-for-woocommerce",
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "Denis Žoljom",
+      "homepage": "https://madebydenis.com",
+      "email": "denis.zoljom@gmail.com"
+    },
+    {
+      "name": "Contributors",
+      "homepage": "https://github.com/dingo-d/simple-linked-variations-for-woocommerce/graphs/contributors"
+    }
+  ],
+  "require-dev": {
+    "infinum/coding-standards-wp": "*"
+  },
+  "support": {
+    "issues": "https://github.com/dingo-d/simple-linked-variations-for-woocommerce/issues",
+    "wiki": "https://github.com/dingo-d/simple-linked-variations-for-woocommerce/wiki",
+    "source": "https://github.com/dingo-d/simple-linked-variations-for-woocommerce"
+  },
+  "autoload": {
+    "classmap": [
+      "admin/"
+    ]
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
